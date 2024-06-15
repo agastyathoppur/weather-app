@@ -1,13 +1,18 @@
 /* HumidityPage.css */
 .humidity-page {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     text-align: center;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .humidity-page p {
+    margin: 20px 0;
   }
   
   .info {
@@ -18,6 +23,9 @@
   
   .info p {
     margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   
   .button {
@@ -34,5 +42,9 @@
   
   .button:hover {
     background-color: #1565c0;
+  }
+  
+  .button .fa-icon {
+    margin-right: 10px;
   }
   

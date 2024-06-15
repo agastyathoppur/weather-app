@@ -1,6 +1,6 @@
-// WeatherPage.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 import './WeatherPage.css';
 
 const WeatherPage: React.FC = () => {
@@ -19,13 +19,19 @@ const WeatherPage: React.FC = () => {
   };
 
   return (
-    <div className="weather-page">
+    <div className="weather-page content">
       <h2>Weather Information</h2>
+      <p>Get the latest weather updates, including temperature and humidity, to plan your day accordingly.</p>
       <div className="button-container">
-        <button className="button" onClick={handleShowTemperature}>Show Temperature</button>
-        <button className="button" onClick={handleShowHumidity}>Show Humidity</button>
+        <button className="button" onClick={handleShowTemperature}>
+          Show Temperature
+        </button>
+        <button className="button" onClick={handleShowHumidity}>
+          Show Humidity
+        </button>
         <button className="button" onClick={handleBackButtonClick}>Back to Home</button>
       </div>
+      <Footer />
     </div>
   );
 };

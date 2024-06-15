@@ -1,6 +1,8 @@
-// HumidityPage.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTint, faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 import './HumidityPage.css';
 
 const HumidityPage: React.FC = () => {
@@ -11,12 +13,14 @@ const HumidityPage: React.FC = () => {
   };
 
   return (
-    <div className="humidity-page">
+    <div className="humidity-page content">
       <h2>Humidity Information</h2>
+      <p>Check the current humidity levels along with atmospheric pressure to better understand the weather conditions.</p>
       <div className="info">
-        <p>Humidity: 66%</p>
+        <p><FontAwesomeIcon icon={faTint} /> Humidity: 66%</p>
       </div>
       <button className="button" onClick={handleBackButtonClick}>Back to Weather</button>
+      <Footer />
     </div>
   );
 };
