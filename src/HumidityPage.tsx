@@ -15,7 +15,7 @@ const HumidityPage: React.FC = () => {
   return (
     <div className="humidity-page content">
       <h2>Humidity Information</h2>
-      <p>Check the current humidity levels along with atmospheric pressure to better understand the weather conditions.</p>
+      <p>Check the current humidity levels to better understand the weather conditions.</p>
       <div className="info">
         <p><FontAwesomeIcon icon={faTint} /> Humidity: 66%</p>
       </div>

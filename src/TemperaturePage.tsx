@@ -15,7 +15,7 @@ const TemperaturePage: React.FC = () => {
   return (
     <div className="temperature-page content">
       <h2>Temperature Information</h2>
-      <p>Current temperature details along with the atmospheric pressure to give you a complete weather overview.</p>
+      <p>Current temperature details along with to give you a complete weather overview.</p>
       <div className="info">
         <p><FontAwesomeIcon icon={faTemperatureHigh} /> Temperature: 40°C</p>
       </div>

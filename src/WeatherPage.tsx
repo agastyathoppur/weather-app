@@ -21,7 +21,7 @@ const WeatherPage: React.FC = () => {
   return (
     <div className="weather-page content">
       <h2>Weather Information</h2>
-      <p>Get the latest weather updates, including temperature and humidity, to plan your day accordingly.</p>
+      <p>Get the latest weather updates to plan your day accordingly.</p>
       <div className="button-container">
         <button className="button" onClick={handleShowTemperature}>
           Show Temperature

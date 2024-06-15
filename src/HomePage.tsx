@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="home-page content">
       <h2>Welcome to the Wells Fargo Weather App!</h2>
-      <p>This app provides current weather information, including temperature and humidity levels, to help you stay informed about the weather conditions in your area.</p>
+      <p>This app provides current weather information to help you stay informed about the weather conditions in your area.</p>
       <button className="button" onClick={handleWeatherButtonClick}>Go to Weather Page</button>
       <Footer />
     </div>
